@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella AI - ROI Calculator & Pricing</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Calculate your potential ROI with Bella AI's intelligent automation solutions and explore our transparent pricing options">
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Floating Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-surface-200">
+        <div class="container-max px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gradient">Bella AI</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_immersive_ai_journey.html" class="text-text-secondary hover:text-primary transition-fast">Home</a>
+                    <a href="product_suite_interactive_ai_modules.html" class="text-text-secondary hover:text-primary transition-fast">Products</a>
+                    <a href="roi_calculator_pricing_dynamic_value_proposition.html" class="text-primary font-semibold">ROI Calculator</a>
+                    <a href="live_demo_center_comprehensive_testing_environment.html" class="text-text-secondary hover:text-primary transition-fast">Live Demo</a>
+                    <a href="success_stories_animated_case_studies.html" class="text-text-secondary hover:text-primary transition-fast">Success Stories</a>
+                    <a href="integration_hub_connectivity_marketplace.html" class="text-text-secondary hover:text-primary transition-fast">Integrations</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="live_demo_center_comprehensive_testing_environment.html" class="btn-primary">Experience Live Demo</a>
+                    <a href="roi_calculator_pricing_dynamic_value_proposition.html" class="btn-secondary">Calculate ROI</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 text-text-secondary hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 bg-gradient-to-br from-primary-50 via-white to-accent-50">
+        <div class="container-max px-6">
+            <div class="text-center mb-12 scroll-reveal">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Transform <span class="text-gradient">Automation</span> into<br>
+                    <span class="text-secondary">Measurable ROI</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    See exactly how Bella AI will impact your business with our intelligent calculator that provides personalized projections based on your unique metrics.
+                </p>
+            </div>
+
+            <!-- Calculator Navigation Tabs -->
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-elevated border border-surface-200 mb-16 overflow-hidden">
+                <div class="flex border-b border-surface-200">
+                    <button id="tab-calculator" class="flex-1 py-4 px-6 font-semibold text-primary border-b-2 border-primary">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                            ROI Calculator
+                        </span>
+                    </button>
+                    <button id="tab-pricing" class="flex-1 py-4 px-6 font-semibold text-text-secondary hover:text-primary transition-fast">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Pricing Options
+                        </span>
+                    </button>
+                </div>
+
+                <!-- ROI Calculator Form -->
+                <div id="calculator-content" class="p-8">
+                    <!-- Step Indicator -->
+                    <div class="flex items-center justify-between mb-8">
+                        <div class="flex-1">
+                            <div class="relative">
+                                <div class="h-1 bg-primary rounded-full"></div>
+                                <div class="absolute top-0 left-0 w-6 h-6 bg-primary rounded-full -mt-2.5 flex items-center justify-center">
+                                    <span class="text-white text-sm font-bold">1</span>
+                                </div>
+                                <div class="absolute top-0 left-1/3 w-6 h-6 bg-surface-200 rounded-full -mt-2.5 flex items-center justify-center">
+                                    <span class="text-text-secondary text-sm font-bold">2</span>
+                                </div>
+                                <div class="absolute top-0 left-2/3 w-6 h-6 bg-surface-200 rounded-full -mt-2.5 flex items-center justify-center">
+                                    <span class="text-text-secondary text-sm font-bold">3</span>
+                                </div>
+                                <div class="absolute top-0 right-0 w-6 h-6 bg-surface-200 rounded-full -mt-2.5 flex items-center justify-center">
+                                    <span class="text-text-secondary text-sm font-bold">4</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between mt-4 text-sm">
+                                <span class="font-semibold text-primary">Business Info</span>
+                                <span class="font-medium text-text-tertiary">Current Metrics</span>
+                                <span class="font-medium text-text-tertiary">Automation Goals</span>
+                                <span class="font-medium text-text-tertiary">Results</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Business Information -->
+                    <div id="step-1" class="space-y-6">
+                        <h3 class="text-2xl font-bold mb-4">Tell us about your business</h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-text-secondary mb-2" for="industry">Industry</label>
+                                <select id="industry" class="input-field">
+                                    <option value="" selected disabled>Select your industry</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="healthcare">Healthcare</option>
+                                    <option value="finance">Finance & Banking</option>
+                                    <option value="retail">Retail & E-commerce</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="education">Education</option>
+                                    <option value="real-estate">Real Estate</option>
+                                    <option value="professional">Professional Services</option>
+                                    <option value="hospitality">Hospitality & Travel</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-text-secondary mb-2" for="company-size">Company Size</label>
+                                <select id="company-size" class="input-field">
+                                    <option value="" selected disabled>Select company size</option>
+                                    <option value="1-10">1-10 employees</option>
+                                    <option value="11-50">11-50 employees</option>
+                                    <option value="51-200">51-200 employees</option>
+                                    <option value="201-500">201-500 employees</option>
+                                    <option value="501-1000">501-1000 employees</option>
+                                    <option value="1001+">1001+ employees</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-text-secondary mb-2" for="current-tools">Current Tools & Systems</label>
+                            <div class="flex flex-wrap gap-3 mb-3">
+                                <div class="bg-surface-50 rounded-lg px-3 py-2 flex items-center gap-2">
+                                    <input type="checkbox" id="tool-crm" class="rounded text-primary">
+                                    <label for="tool-crm">CRM System</label>
+                                </div>
+                                <div class="bg-surface-50 rounded-lg px-3 py-2 flex items-center gap-2">
+                                    <input type="checkbox" id="tool-marketing" class="rounded text-primary">
+                                    <label for="tool-marketing">Marketing Automation</label>
+                                </div>
+                                <div class="bg-surface-50 rounded-lg px-3 py-2 flex items-center gap-2">
+                                    <input type="checkbox" id="tool-chat" class="rounded text-primary">
+                                    <label for="tool-chat">Live Chat</label>
+                                </div>
+                                <div class="bg-surface-50 rounded-lg px-3 py-2 flex items-center gap-2">
+                                    <input type="checkbox" id="tool-email" class="rounded text-primary">
+                                    <label for="tool-email">Email Marketing</label>
+                                </div>
+                                <div class="bg-surface-50 rounded-lg px-3 py-2 flex items-center gap-2">
+                                    <input type="checkbox" id="tool-analytics" class="rounded text-primary">
+                                    <label for="tool-analytics">Analytics Platform</label>
+                                </div>
+                            </div>
+                            <input type="text" id="other-tools" class="input-field" placeholder="Other tools (please specify)">
+                        </div>
+
+                        <div class="pt-4">
+                            <button id="next-step-1" class="btn-primary w-full md:w-auto">
+                                Continue to Current Metrics
+                                <svg class="w-5 h-5 ml-2 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden -z-10">
+            <!-- Floating Data Nodes -->
+            <div class="absolute top-20 left-10 w-4 h-4 bg-accent rounded-full opacity-60 animate-pulse"></div>
+            <div class="absolute top-40 right-20 w-6 h-6 bg-primary rounded-full opacity-40 animate-bounce"></div>
+            <div class="absolute bottom-32 left-1/4 w-3 h-3 bg-secondary rounded-full opacity-50 animate-ping"></div>
+            <div class="absolute bottom-20 right-1/3 w-5 h-5 bg-accent rounded-full opacity-30 animate-pulse"></div>
+            
+            <!-- Connecting Lines -->
+            <svg class="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 1200 800">
+                <defs>
+                    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0066CC;stop-opacity:0.6"/>
+                        <stop offset="100%" style="stop-color:#00FF88;stop-opacity:0.2"/>
+                    </linearGradient>
+                </defs>
+                <path d="M100,200 Q300,100 500,200 T900,150" stroke="url(#lineGradient)" stroke-width="2" fill="none"/>
+                <path d="M200,400 Q400,300 600,400 T1000,350" stroke="url(#lineGradient)" stroke-width="2" fill="none"/>
+                <path d="M150,600 Q350,500 550,600 T950,550" stroke="url(#lineGradient)" stroke-width="2" fill="none"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ROI Visualization Section -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    See Your <span class="text-gradient">Potential ROI</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Our intelligent calculator provides personalized projections based on real client data and your unique business metrics
+                </p>
+            </div>
+
+            <!-- ROI Visualization Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Revenue Increase -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 scroll-reveal">
+                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-primary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">Revenue Increase</h3>
+                    <p class="text-text-secondary mb-6">Boost your revenue through improved lead capture, qualification, and conversion rates.</p>
+                    
+                    <div class="bg-surface-50 rounded-lg p-4 mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">Average</span>
+                            <span class="text-xl font-bold text-success">+147%</span>
+                        </div>
+                        <div class="h-2 bg-surface-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-primary to-success rounded-full" style="width: 75%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-text-tertiary mt-1">
+                            <span>+50%</span>
+                            <span>+250%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-sm text-text-secondary">
+                        Based on 1,200+ businesses in your industry
+                    </div>
+                </div>
+
+                <!-- Cost Savings -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 scroll-reveal">
+                    <div class="w-16 h-16 bg-gradient-to-r from-accent to-accent-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">Cost Savings</h3>
+                    <p class="text-text-secondary mb-6">Reduce operational costs through automation of repetitive tasks and processes.</p>
+                    
+                    <div class="bg-surface-50 rounded-lg p-4 mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">Average</span>
+                            <span class="text-xl font-bold text-success">-32%</span>
+                        </div>
+                        <div class="h-2 bg-surface-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-accent to-success rounded-full" style="width: 65%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-text-tertiary mt-1">
+                            <span>-15%</span>
+                            <span>-50%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-sm text-text-secondary">
+                        Based on 1,200+ businesses in your industry
+                    </div>
+                </div>
+
+                <!-- Time Recapture -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 scroll-reveal">
+                    <div class="w-16 h-16 bg-gradient-to-r from-secondary to-secondary-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-text-primary mb-3">Time Recapture</h3>
+                    <p class="text-text-secondary mb-6">Free up valuable time for your team to focus on strategic activities.</p>
+                    
+                    <div class="bg-surface-50 rounded-lg p-4 mb-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">Average</span>
+                            <span class="text-xl font-bold text-success">+28 hrs/week</span>
+                        </div>
+                        <div class="h-2 bg-surface-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-secondary to-primary rounded-full" style="width: 70%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-text-tertiary mt-1">
+                            <span>10 hrs</span>
+                            <span>40 hrs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="text-sm text-text-secondary">
+                        Based on 1,200+ businesses in your industry
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Sliders -->
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-subtle border border-surface-200 p-8 scroll-reveal">
+                <h3 class="text-2xl font-bold mb-6">Adjust Variables to See Impact</h3>
+                
+                <div class="space-y-8">
+                    <!-- Monthly Leads -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <label class="text-text-secondary">Monthly Leads</label>
+                            <span class="font-semibold" id="leads-value">100</span>
+                        </div>
+                        <input type="range" min="10" max="1000" value="100" class="w-full h-2 bg-surface-200 rounded-lg appearance-none cursor-pointer" id="leads-slider">
+                        <div class="flex justify-between text-xs text-text-tertiary mt-1">
+                            <span>10</span>
+                            <span>1000</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Conversion Rate -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <label class="text-text-secondary">Current Conversion Rate</label>
+                            <span class="font-semibold" id="conversion-value">2.5%</span>
+                        </div>
+                        <input type="range" min="0.5" max="10" step="0.1" value="2.5" class="w-full h-2 bg-surface-200 rounded-lg appearance-none cursor-pointer" id="conversion-slider">
+                        <div class="flex justify-between text-xs text-text-tertiary mt-1">
+                            <span>0.5%</span>
+                            <span>10%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Average Deal Size -->
+                    <div>
+                        <div class="flex justify-between mb-2">
+                            <label class="text-text-secondary">Average Deal Size</label>
+                            <span class="font-semibold" id="deal-value">$5,000</span>
+                        </div>
+                        <input type="range" min="1000" max="100000" step="1000" value="5000" class="w-full h-2 bg-surface-200 rounded-lg appearance-none cursor-pointer" id="deal-slider">
+                        <div class="flex justify-between text-xs text-text-tertiary mt-1">
+                            <span>$1,000</span>
+                            <span>$100,000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Results Preview -->
+                <div class="mt-8 pt-8 border-t border-surface-200">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-sm text-text-secondary mb-1">Current Monthly Revenue</div>
+                            <div class="text-2xl font-bold text-text-primary" id="current-revenue">$12,500</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-sm text-text-secondary mb-1">Projected Monthly Revenue</div>
+                            <div class="text-2xl font-bold text-success" id="projected-revenue">$36,250</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-sm text-text-secondary mb-1">Increase</div>
+                            <div class="text-2xl font-bold text-gradient" id="revenue-increase">+190%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 text-center">
+                        <a href="live_demo_center_comprehensive_testing_environment.html" class="btn-primary pulse-accent">
+                            Get Your Full ROI Report
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section-padding bg-surface-50">
+        <div class="container-max">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Transparent <span class="text-gradient">Pricing</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Scalable plans designed to grow with your business, with no hidden fees or surprises
+                </p>
+            </div>
+
+            <!-- Pricing Toggle -->
+            <div class="flex justify-center items-center mb-12 scroll-reveal">
+                <span class="text-text-secondary mr-3">Monthly</span>
+                <div class="relative inline-block w-12 h-6 bg-surface-200 rounded-full cursor-pointer" id="pricing-toggle">
+                    <div class="absolute left-1 top-1 w-4 h-4 bg-primary rounded-full transition-transform"></div>
+                </div>
+                <span class="text-text-secondary ml-3">Annual <span class="text-xs text-accent font-semibold">Save 20%</span></span>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Starter Plan -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 border-t-4 border-primary scroll-reveal">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-text-primary mb-2">Starter</h3>
+                        <p class="text-text-secondary mb-4">Perfect for small businesses</p>
+                        <div class="text-4xl font-bold text-text-primary mb-2">$499<span class="text-text-tertiary text-lg font-normal">/mo</span></div>
+                        <p class="text-text-tertiary text-sm">Billed monthly</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Up to <b>1,000 leads</b> processed monthly</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Lead Generation AI</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Chat AI (business hours only)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>3 standard integrations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Email support</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-text-tertiary">
+                            <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                            <span>Voice AI</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-text-tertiary">
+                            <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                            <span>Advanced analytics</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-auto">
+                        <a href="live_demo_center_comprehensive_testing_environment.html" class="btn-primary w-full text-center">Start Free Trial</a>
+                        <div class="text-center text-text-tertiary text-sm mt-4">14-day free trial, no credit card required</div>
+                    </div>
+                </div>
+
+                <!-- Growth Plan -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 border-t-4 border-accent relative scroll-reveal">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-accent text-gray-900 px-4 py-1 rounded-full text-sm font-semibold">
+                        Most Popular
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-text-primary mb-2">Growth</h3>
+                        <p class="text-text-secondary mb-4">For growing mid-market companies</p>
+                        <div class="text-4xl font-bold text-text-primary mb-2">$999<span class="text-text-tertiary text-lg font-normal">/mo</span></div>
+                        <p class="text-text-tertiary text-sm">Billed monthly</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Up to <b>5,000 leads</b> processed monthly</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Lead Generation AI</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Chat AI (24/7 support)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Voice AI (limited minutes)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>10 standard integrations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Priority email & chat support</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Advanced analytics</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-auto">
+                        <a href="live_demo_center_comprehensive_testing_environment.html" class="btn-accent w-full text-center">Start Free Trial</a>
+                        <div class="text-center text-text-tertiary text-sm mt-4">14-day free trial, no credit card required</div>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 border-t-4 border-secondary scroll-reveal">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-text-primary mb-2">Enterprise</h3>
+                        <p class="text-text-secondary mb-4">Custom solutions for large organizations</p>
+                        <div class="text-4xl font-bold text-text-primary mb-2">Custom</div>
+                        <p class="text-text-tertiary text-sm">Contact for pricing</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span><b>Unlimited leads</b> processed monthly</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>All AI modules included</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Unlimited Voice AI minutes</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Custom AI training</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Unlimited integrations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>Dedicated account manager</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-success flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span>24/7 priority support</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-auto">
+                        <a href="#" class="btn-secondary w-full text-center">Contact Sales</a>
+                        <div class="text-center text-text-tertiary text-sm mt-4">Custom implementation & onboarding</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Comparison -->
+            <div class="max-w-5xl mx-auto bg-white rounded-xl shadow-subtle border border-surface-200 overflow-hidden scroll-reveal">
+                <div class="p-6 bg-surface-50 border-b border-surface-200">
+                    <h3 class="text-2xl font-bold">Feature Comparison</h3>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-surface-50">
+                                <th class="py-4 px-6 text-left text-text-secondary font-semibold">Feature</th>
+                                <th class="py-4 px-6 text-center text-primary font-semibold">Starter</th>
+                                <th class="py-4 px-6 text-center text-accent font-semibold">Growth</th>
+                                <th class="py-4 px-6 text-center text-secondary font-semibold">Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-surface-100">
+                                <td class="py-4 px-6 text-text-secondary">Lead Processing</td>
+                                <td class="py-4 px-6 text-center">1,000/mo</td>
+                                <td class="py-4 px-6 text-center">5,000/mo</td>
+                                <td class="py-4 px-6 text-center">Unlimited</td>
+                            </tr>
+                            <tr class="border-t border-surface-100 bg-surface-50">
+                                <td class="py-4 px-6 text-text-secondary">Lead Generation AI</td>
+                                <td class="py-4 px-6 text-center">
+                                    <svg class="w-5 h-5 text-success mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </td>
+                                <td class="py-4 px-6 text-center">
+                                    <svg class="w-5 h-5 text-success mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </td>
+                                <td class="py-4 px-6 text-center">
+                                    <svg class="w-5 h-5 text-success mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr class="border-t border-surface-100">
+                                <td class="py-4 px-6 text-text-secondary">Chat AI</td>
+                                <td class="py-4 px-6 text-center">Business Hours</td>
+                                <td class="py-4 px-6 text-center">24/7</td>
+                                <td class="py-4 px-6 text-center">24/7 + Custom</td>
+                            </tr>
+                            <tr class="border-t border-surface-100 bg-surface-50">
+                                <td class="py-4 px-6 text-text-secondary">Voice AI</td>
+                                <td class="py-4 px-6 text-center">
+                                    <svg class="w-5 h-5 text-error mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                    </svg>
+                                </td>
+                                <td class="py-4 px-6 text-center">500 mins/mo</td>
+                                <td class="py-4 px-6 text-center">Unlimited</td>
+                            </tr>
+                            <tr class="border-t border-surface-100">
+                                <td class="py-4 px-6 text-text-secondary">Integrations</td>
+                                <td class="py-4 px-6 text-center">3</td>
+                                <td class="py-4 px-6 text-center">10</td>
+                                <td class="py-4 px-6 text-center">Unlimited</td>
+                            </tr>
+                            <tr class="border-t border-surface-100 bg-surface-50">
+                                <td class="py-4 px-6 text-text-secondary">Analytics</td>
+                                <td class="py-4 px-6 text-center">Basic</td>
+                                <td class="py-4 px-6 text-center">Advanced</td>
+                                <td class="py-4 px-6 text-center">Custom</td>
+                            </tr>
+                            <tr class="border-t border-surface-100">
+                                <td class="py-4 px-6 text-text-secondary">Support</td>
+                                <td class="py-4 px-6 text-center">Email</td>
+                                <td class="py-4 px-6 text-center">Priority Email & Chat</td>
+                                <td class="py-4 px-6 text-center">Dedicated Manager</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Real <span class="text-gradient">Success Stories</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    See how businesses like yours achieved remarkable ROI with Bella AI
+                </p>
+            </div>
+
+            <!-- Case Study Cards -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Case Study 1 -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 scroll-reveal">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-surface-50 rounded-xl flex items-center justify-center mr-4">
+                            <div class="font-bold text-xl text-primary">TC</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary">TechCorp</h3>
+                            <p class="text-text-secondary">Software Development</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">ROI Achieved</span>
+                            <span class="text-xl font-bold text-success">743%</span>
+                        </div>
+                        <div class="h-2 bg-surface-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-primary to-success rounded-full" style="width: 74%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <p class="text-text-secondary mb-4">"Bella AI transformed our lead generation process. We've seen a 3x increase in qualified leads and our sales team can focus on closing deals instead of chasing prospects."</p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                 alt="Michael Chen" 
+                                 class="w-10 h-10 rounded-full object-cover mr-3"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div>
+                                <div class="font-semibold">Michael Chen</div>
+                                <div class="text-text-tertiary text-sm">VP of Sales</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Implementation Time</div>
+                            <div class="font-semibold">2 weeks</div>
+                        </div>
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Lead Increase</div>
+                            <div class="font-semibold">312%</div>
+                        </div>
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Conversion Rate</div>
+                            <div class="font-semibold">8.7%</div>
+                        </div>
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Time Saved</div>
+                            <div class="font-semibold">32 hrs/week</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <a href="success_stories_animated_case_studies.html" class="text-primary font-semibold hover:text-primary-700 transition-colors flex items-center gap-2">
+                            Read Full Case Study
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="card group hover:shadow-elevated transition-all duration-300 scroll-reveal">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-surface-50 rounded-xl flex items-center justify-center mr-4">
+                            <div class="font-bold text-xl text-accent">GH</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary">GrowthHouse Realty</h3>
+                            <p class="text-text-secondary">Real Estate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-text-secondary">ROI Achieved</span>
+                            <span class="text-xl font-bold text-success">892%</span>
+                        </div>
+                        <div class="h-2 bg-surface-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-primary to-success rounded-full" style="width: 89%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <p class="text-text-secondary mb-4">"The Voice AI has been a game-changer for our real estate business. It follows up with every lead instantly, qualifies them, and only sends the ready-to-buy prospects to our agents."</p>
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2876&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                                 alt="Sarah Johnson" 
+                                 class="w-10 h-10 rounded-full object-cover mr-3"
+                                 loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div>
+                                <div class="font-semibold">Sarah Johnson</div>
+                                <div class="text-text-tertiary text-sm">Director of Operations</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 text-sm">
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Implementation Time</div>
+                            <div class="font-semibold">3 weeks</div>
+                        </div>
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Lead Increase</div>
+                            <div class="font-semibold">247%</div>
+                        </div>
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Conversion Rate</div>
+                            <div class="font-semibold">12.3%</div>
+                        </div>
+                        <div class="bg-surface-50 rounded-lg p-3">
+                            <div class="text-text-tertiary mb-1">Time Saved</div>
+                            <div class="font-semibold">45 hrs/week</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <a href="success_stories_animated_case_studies.html" class="text-primary font-semibold hover:text-primary-700 transition-colors flex items-center gap-2">
+                            Read Full Case Study
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="text-center">
+                <a href="success_stories_animated_case_studies.html" class="btn-secondary">
+                    View All Success Stories
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-surface-50">
+        <div class="container-max">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Frequently Asked <span class="text-gradient">Questions</span>
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Everything you need to know about our pricing and ROI calculator
+                </p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="max-w-3xl mx-auto space-y-4 scroll-reveal">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-subtle border border-surface-200 overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left font-semibold text-text-primary hover:text-primary transition-colors">
+                        <span>How accurate is the ROI calculator?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-6">
+                        <p class="text-text-secondary">Our ROI calculator is based on actual performance data from over 1,200 businesses across various industries. The projections represent average results, with 80% of our clients achieving or exceeding these estimates. Individual results may vary based on your specific business model, market conditions, and implementation quality.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-subtle border border-surface-200 overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left font-semibold text-text-primary hover:text-primary transition-colors">
+                        <span>Do you offer custom pricing for specific needs?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-text-secondary">Yes, we offer custom pricing for businesses with specific needs or higher volume requirements. Our Enterprise plan is fully customizable to your unique situation. Contact our sales team to discuss your requirements and get a tailored quote.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-subtle border border-surface-200 overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left font-semibold text-text-primary hover:text-primary transition-colors">
+                        <span>How long does implementation take?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-text-secondary">Implementation time varies based on your plan and specific requirements. Starter plans typically take 1-2 weeks to fully implement. Growth plans take 2-3 weeks, and Enterprise implementations range from 3-6 weeks depending on complexity and customization needs. Our onboarding team will provide a detailed timeline during your kickoff call.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-subtle border border-surface-200 overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left font-semibold text-text-primary hover:text-primary transition-colors">
+                        <span>Can I upgrade or downgrade my plan later?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-text-secondary">Yes, you can upgrade your plan at any time as your business grows. Upgrades take effect immediately, and you'll be billed the prorated difference for the remainder of your billing cycle. Downgrades take effect at the end of your current billing cycle to ensure uninterrupted service.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-subtle border border-surface-200 overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-6 text-left font-semibold text-text-primary hover:text-primary transition-colors">
+                        <span>What happens if I exceed my monthly lead limit?</span>
+                        <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-6 hidden">
+                        <p class="text-text-secondary">If you exceed your monthly lead limit, we won't cut off your service. Additional leads are billed at a per-lead rate based on your plan level. We'll notify you when you reach 80% of your limit so you can decide whether to upgrade to a higher tier or continue with the overage charges. Enterprise plans include unlimited leads with no overage concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section-padding bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container-max">
+            <div class="text-center scroll-reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Ready to Transform Your Business?
+                </h2>
+                <p class="text-xl text-primary-100 mb-12 max-w-3xl mx-auto">
+                    Join the AI revolution and watch your business grow while you sleep. Start your free trial today.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <a href="live_demo_center_comprehensive_testing_environment.html" class="btn-accent text-lg px-8 py-4 pulse-accent">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Start Free Trial
+                        </span>
+                    </a>
+                    <a href="success_stories_animated_case_studies.html" class="bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 text-lg px-8 py-4 rounded-lg font-semibold transition-all duration-300">
+                        <span class="flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            View Success Stories
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">Bella AI</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Your intelligent business partner that transforms leads into revenue 24/7.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="product_suite_interactive_ai_modules.html" class="text-gray-400 hover:text-accent transition-colors">Lead Generation AI</a></li>
+                        <li><a href="product_suite_interactive_ai_modules.html" class="text-gray-400 hover:text-accent transition-colors">Voice AI</a></li>
+                        <li><a href="product_suite_interactive_ai_modules.html" class="text-gray-400 hover:text-accent transition-colors">Chat AI</a></li>
+                        <li><a href="integration_hub_connectivity_marketplace.html" class="text-gray-400 hover:text-accent transition-colors">CRM Integration</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Resources</h4>
+                    <ul class="space-y-3">
+                        <li><a href="live_demo_center_comprehensive_testing_environment.html" class="text-gray-400 hover:text-accent transition-colors">Live Demo</a></li>
+                        <li><a href="success_stories_animated_case_studies.html" class="text-gray-400 hover:text-accent transition-colors">Case Studies</a></li>
+                        <li><a href="roi_calculator_pricing_dynamic_value_proposition.html" class="text-gray-400 hover:text-accent transition-colors">ROI Calculator</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors">Support</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors">Sales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors">Partners</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-accent transition-colors">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Bella AI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Reveal Animation Script -->
+    <script>
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all scroll-reveal elements
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Tab switching functionality
+        document.getElementById('tab-calculator').addEventListener('click', function() {
+            this.classList.add('text-primary', 'border-b-2', 'border-primary');
+            document.getElementById('tab-pricing').classList.remove('text-primary', 'border-b-2', 'border-primary');
+            document.getElementById('tab-pricing').classList.add('text-text-secondary');
+            // Show calculator content, hide pricing content
+            // Additional functionality would be added here
+        });
+
+        document.getElementById('tab-pricing').addEventListener('click', function() {
+            this.classList.add('text-primary', 'border-b-2', 'border-primary');
+            document.getElementById('tab-calculator').classList.remove('text-primary', 'border-b-2', 'border-primary');
+            document.getElementById('tab-calculator').classList.add('text-text-secondary');
+            // Show pricing content, hide calculator content
+            // Additional functionality would be added here
+        });
+
+        // ROI Calculator functionality
+        const leadsSlider = document.getElementById('leads-slider');
+        const leadsValue = document.getElementById('leads-value');
+        const conversionSlider = document.getElementById('conversion-slider');
+        const conversionValue = document.getElementById('conversion-value');
+        const dealSlider = document.getElementById('deal-slider');
+        const dealValue = document.getElementById('deal-value');
+        const currentRevenue = document.getElementById('current-revenue');
+        const projectedRevenue = document.getElementById('projected-revenue');
+        const revenueIncrease = document.getElementById('revenue-increase');
+
+        // Update values on slider change
+        leadsSlider.addEventListener('input', updateCalculations);
+        conversionSlider.addEventListener('input', updateCalculations);
+        dealSlider.addEventListener('input', updateCalculations);
+
+        function updateCalculations() {
+            // Update displayed values
+            leadsValue.textContent = leadsSlider.value;
+            conversionValue.textContent = conversionSlider.value + '%';
+            dealValue.textContent = '$' + Number(dealSlider.value).toLocaleString();
+            
+            // Calculate current revenue
+            const leads = parseInt(leadsSlider.value);
+            const conversionRate = parseFloat(conversionSlider.value) / 100;
+            const dealSize = parseInt(dealSlider.value);
+            
+            const current = leads * conversionRate * dealSize;
+            const projected = current * 2.9; // Assuming 190% increase with Bella AI
+            const increase = ((projected / current) - 1) * 100;
+            
+            currentRevenue.textContent = '$' + Math.round(current).toLocaleString();
+            projectedRevenue.textContent = '$' + Math.round(projected).toLocaleString();
+            revenueIncrease.textContent = '+' + Math.round(increase) + '%';
+        }
+
+        // Initialize calculations
+        updateCalculations();
+
+        // Pricing toggle functionality
+        document.getElementById('pricing-toggle').addEventListener('click', function() {
+            this.classList.toggle('bg-primary');
+            this.classList.toggle('bg-surface-200');
+            const toggle = this.querySelector('div');
+            toggle.classList.toggle('left-1');
+            toggle.classList.toggle('left-7');
+            // Additional pricing toggle functionality would be added here
+        });
+
+        // FAQ accordion functionality
+        document.querySelectorAll('.bg-white.rounded-xl button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('svg');
+                
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.bg-white.rounded-xl button').forEach(otherButton => {
+                    if (otherButton !== button) {
+                        const otherContent = otherButton.nextElementSibling;
+                        const otherIcon = otherButton.querySelector('svg');
+                        
+                        if (!otherContent.classList.contains('hidden')) {
+                            otherContent.classList.add('hidden');
+                            otherIcon.classList.remove('rotate-180');
+                        }
+                    }
+                });
+            });
+        });
+
+        // Add floating animation to background elements
+        const floatingElements = document.querySelectorAll('.absolute.top-20, .absolute.top-40, .absolute.bottom-32, .absolute.bottom-20');
+        floatingElements.forEach((el, index) => {
+            el.style.animation = `float ${3 + index * 0.5}s ease-in-out infinite`;
+        });
+
+        // CSS for floating animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-10px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script id="dhws-elementInspector" src="../public/dhws-web-inspector.js"></script>
+<script id="dhws-errorTracker" src="../public/dhws-error-tracker.js"></script>
+</body>
+</html>
